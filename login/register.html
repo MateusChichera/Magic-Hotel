@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Registrar - Magic Hotel & Resort</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style type="text/css">
+		
+      .cor{color: red;}
+      .dispNone{display: none;}
+    .collection .collection-item{
+    line-height: 1.0rem;
+    }
+
+</style>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-10">
+            <div class="wrap d-md-flex">
+              <div
+                class="img"
+                style="background-image: url(/img/rooms/8.jpg)"
+              ></div>
+              <div class="login-wrap p-4 p-md-5">
+                <div class="d-flex">
+                  <div class="w-100">
+                    <h3 class="mb-4">Criar Conta</h3>
+                  </div>
+                </div>
+                <form action="index.html" class="signin-form" name="f1" id="f1">
+                  <div class="form-group mb-3">
+                    <label class="label" for="nome">Nome</label>
+                    <p id="p1" class="dispNone"></p>
+                    <input
+                      type="text"
+                      class="form-control"input type="text" id="nome" placeholder="Digite seu nome"onblur="verlogin()"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="Sobrenome" class="label">Sobrenome</label>
+                    <p id="p2" class="dispNone"></p>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" onblur="verlogin1()"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="Nasc" class="active">Data de nascimento</label>
+                    
+                    <input type="date" name="nascimento" id="nascimento" onblur="validadata()">
+                    <p id="pnasc" class="dispNone"></p>
+                  <div class="form-group mb-3">
+                    <label for="CPF" class="active">CPF</label>
+                    <p id="p4" class="dispNone"></p>
+                    <input
+                    input type="text" id="tNumero5" placeholder="999.999.999-99" 
+									onkeypress="mCpf(this)" maxlength="14" onblur="validarCPF()" class="form-control"
+                  />
+                  <div class="form-group mb-3">
+                    <label for="CEP" class="active">CEP</label>
+                    <p id="p4" class="dispNone"></p>
+                    <input type="tel" placeholder="Informe o Cep" id="cep" name="cep" autofocus class="form-control"
+                  />
+                  <div class="form-group mb-3">
+                    <label for="Cidade" class="active">Cidade</label>
+                    <input type="text" placeholder="Informe a cidade" id="cidade" name="cidade" class="form-control"
+                  />
+                  <div class="form-group mb-3">
+                    <label for="Bairro" class="active">Bairro</label>
+                    <input type="text" placeholder="Informe o Bairro" name="bairro" id="bairro" class="form-control"
+                  />
+                  <div class="form-group mb-3">
+                    <label for="Endereço" class="active">Endereço</label>
+                    <input type="text" placeholder="Informe o seu Endereço Ex:(Rua da Consolação)" name="endereco" id="endereco" class="form-control"
+                  />
+                  <div class="form-group mb-3">
+                    <label for="Numero" class="active">Número</label>
+                    <input type="text" placeholder="Informe o número do endereço" name="nr_end" id="nr_end" class="form-control" onblur="vefnum()"
+                  />
+                  <p class="dispNone" id="pn"></p>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="email" class="active">Email</label>
+                    <div id="msgemail"></div>
+                    <input type="text" name="email" onblur="validacaoEmail(f1.email)" class="form-control"/>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-group mb-3">
+                      <label class="label" for="password">Senha</label>
+                      <input
+                        type="password"
+                        class="form-control"input type="password" id="senha" placeholder="Digite sua senha"
+                      />
+                    <div class="form-group mb-3">
+                        <label class="active" for="confirmpassword">Confirme a Senha</label>
+                        <p id="psenha" class="dispNone"></p>
+                        <input type="password" id="senha2" placeholder="Confirme a senha" onblur="conferesenha()" class="form-control"/>
+                      </div>
+                    <button
+                      type="submit"
+                      class="form-control btn btn-primary rounded submit px-3"
+                      onclick="svazia()"
+                    >
+                      Criar Conta
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js" type="text/javascript"></script>
+<script type="text/javascript"></script>
+<script type="text/javascript" src="formsjs.js"></script>
+  </body>
+</html>
